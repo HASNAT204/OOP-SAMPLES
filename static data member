@@ -1,0 +1,29 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class car
+{
+	static int price;
+public:
+	car()
+	{
+
+		price++;
+}
+	static int getprice()
+	{
+		return price;
+	}
+
+};
+int car::price = 20;
+int main()
+{
+	car c1;
+	
+	car c2;
+	cout << c1.getprice() << endl;
+	cout<<c2.getprice()<<endl;
+	
+	system("pause");
+}
